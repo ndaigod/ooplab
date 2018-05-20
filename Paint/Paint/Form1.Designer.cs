@@ -37,23 +37,24 @@
             this.GTrackBar = new System.Windows.Forms.TrackBar();
             this.BTrackBar = new System.Windows.Forms.TrackBar();
             this.ATrackBar = new System.Windows.Forms.TrackBar();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.CurColorPictureBox = new System.Windows.Forms.PictureBox();
+            this.ColorPickerPictureBox = new System.Windows.Forms.PictureBox();
             this.LineButton = new System.Windows.Forms.ToolStripButton();
             this.CircleButton = new System.Windows.Forms.ToolStripButton();
             this.ElipseButton = new System.Windows.Forms.ToolStripButton();
             this.SquareButton = new System.Windows.Forms.ToolStripButton();
             this.RectangleButton = new System.Windows.Forms.ToolStripButton();
             this.TriangleButton = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MainPictureBox = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ATrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurColorPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorPickerPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -69,7 +70,7 @@
             this.TriangleButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(35, 676);
+            this.toolStrip1.Size = new System.Drawing.Size(47, 676);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -141,25 +142,27 @@
             this.ATrackBar.Size = new System.Drawing.Size(242, 69);
             this.ATrackBar.TabIndex = 11;
             // 
-            // pictureBox3
+            // CurColorPictureBox
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(889, 78);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(113, 115);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.CurColorPictureBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CurColorPictureBox.Location = new System.Drawing.Point(889, 78);
+            this.CurColorPictureBox.Name = "CurColorPictureBox";
+            this.CurColorPictureBox.Size = new System.Drawing.Size(113, 115);
+            this.CurColorPictureBox.TabIndex = 3;
+            this.CurColorPictureBox.TabStop = false;
             // 
-            // pictureBox2
+            // ColorPickerPictureBox
             // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBox2.Image = global::Paint.Properties.Resources.colorpicker;
-            this.pictureBox2.Location = new System.Drawing.Point(1022, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 181);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.ColorPickerPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ColorPickerPictureBox.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.ColorPickerPictureBox.Image = global::Paint.Properties.Resources.colorpicker1;
+            this.ColorPickerPictureBox.Location = new System.Drawing.Point(1022, 12);
+            this.ColorPickerPictureBox.Name = "ColorPickerPictureBox";
+            this.ColorPickerPictureBox.Size = new System.Drawing.Size(183, 183);
+            this.ColorPickerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ColorPickerPictureBox.TabIndex = 2;
+            this.ColorPickerPictureBox.TabStop = false;
+            this.ColorPickerPictureBox.Click += new System.EventHandler(this.ColorPickerPictureBox_Click);
             // 
             // LineButton
             // 
@@ -167,8 +170,9 @@
             this.LineButton.Image = global::Paint.Properties.Resources.line;
             this.LineButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.LineButton.Name = "LineButton";
-            this.LineButton.Size = new System.Drawing.Size(32, 34);
+            this.LineButton.Size = new System.Drawing.Size(44, 34);
             this.LineButton.Text = "Line";
+            this.LineButton.Click += new System.EventHandler(this.LineButton_Click);
             // 
             // CircleButton
             // 
@@ -176,8 +180,9 @@
             this.CircleButton.Image = global::Paint.Properties.Resources.circle;
             this.CircleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CircleButton.Name = "CircleButton";
-            this.CircleButton.Size = new System.Drawing.Size(32, 34);
+            this.CircleButton.Size = new System.Drawing.Size(44, 34);
             this.CircleButton.Text = "Circle";
+            this.CircleButton.Click += new System.EventHandler(this.CircleButton_Click);
             // 
             // ElipseButton
             // 
@@ -185,8 +190,9 @@
             this.ElipseButton.Image = global::Paint.Properties.Resources.elipse;
             this.ElipseButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ElipseButton.Name = "ElipseButton";
-            this.ElipseButton.Size = new System.Drawing.Size(32, 34);
+            this.ElipseButton.Size = new System.Drawing.Size(44, 34);
             this.ElipseButton.Text = "Elipse";
+            this.ElipseButton.Click += new System.EventHandler(this.ElipseButton_Click);
             // 
             // SquareButton
             // 
@@ -194,8 +200,9 @@
             this.SquareButton.Image = global::Paint.Properties.Resources.square;
             this.SquareButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SquareButton.Name = "SquareButton";
-            this.SquareButton.Size = new System.Drawing.Size(32, 34);
+            this.SquareButton.Size = new System.Drawing.Size(44, 34);
             this.SquareButton.Text = "Square";
+            this.SquareButton.Click += new System.EventHandler(this.SquareButton_Click);
             // 
             // RectangleButton
             // 
@@ -203,8 +210,9 @@
             this.RectangleButton.Image = global::Paint.Properties.Resources.rectangle;
             this.RectangleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.RectangleButton.Name = "RectangleButton";
-            this.RectangleButton.Size = new System.Drawing.Size(32, 34);
+            this.RectangleButton.Size = new System.Drawing.Size(44, 34);
             this.RectangleButton.Text = "Rectangle";
+            this.RectangleButton.Click += new System.EventHandler(this.RectangleButton_Click);
             // 
             // TriangleButton
             // 
@@ -212,21 +220,25 @@
             this.TriangleButton.Image = global::Paint.Properties.Resources.triangle;
             this.TriangleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TriangleButton.Name = "TriangleButton";
-            this.TriangleButton.Size = new System.Drawing.Size(32, 34);
+            this.TriangleButton.Size = new System.Drawing.Size(44, 34);
             this.TriangleButton.Text = "Triangle";
             // 
-            // pictureBox1
+            // MainPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(55, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(808, 592);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.MainPictureBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MainPictureBox.Image = global::Paint.Properties.Resources.back1;
+            this.MainPictureBox.Location = new System.Drawing.Point(55, 12);
+            this.MainPictureBox.Name = "MainPictureBox";
+            this.MainPictureBox.Size = new System.Drawing.Size(808, 592);
+            this.MainPictureBox.TabIndex = 0;
+            this.MainPictureBox.TabStop = false;
+            this.MainPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPictureBox_MouseDown);
+            this.MainPictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPictureBox_MouseMove);
+            this.MainPictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainPictureBox_MouseUp);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1217, 676);
             this.Controls.Add(this.ATrackBar);
             this.Controls.Add(this.BTrackBar);
@@ -236,10 +248,10 @@
             this.Controls.Add(this.BLabel);
             this.Controls.Add(this.GLabel);
             this.Controls.Add(this.RLabel);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.CurColorPictureBox);
+            this.Controls.Add(this.ColorPickerPictureBox);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MainPictureBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.toolStrip1.ResumeLayout(false);
@@ -248,9 +260,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.GTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ATrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurColorPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorPickerPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,7 +270,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox MainPictureBox;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton LineButton;
         private System.Windows.Forms.ToolStripButton CircleButton;
@@ -266,8 +278,8 @@
         private System.Windows.Forms.ToolStripButton SquareButton;
         private System.Windows.Forms.ToolStripButton RectangleButton;
         private System.Windows.Forms.ToolStripButton TriangleButton;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ColorPickerPictureBox;
+        private System.Windows.Forms.PictureBox CurColorPictureBox;
         private System.Windows.Forms.Label RLabel;
         private System.Windows.Forms.Label GLabel;
         private System.Windows.Forms.Label BLabel;
@@ -276,6 +288,7 @@
         private System.Windows.Forms.TrackBar GTrackBar;
         private System.Windows.Forms.TrackBar BTrackBar;
         private System.Windows.Forms.TrackBar ATrackBar;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
