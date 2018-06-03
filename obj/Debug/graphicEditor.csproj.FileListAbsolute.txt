@@ -1,0 +1,43 @@
+D:\4 сем\ооп\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe.config
+D:\4 сем\ооп\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe
+D:\4 сем\ооп\graphicEditor\graphicEditor\bin\Debug\graphicEditor.pdb
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csprojResolveAssemblyReference.cache
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.Properties.Resources.resources
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csproj.GenerateResource.Cache
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csproj.CoreCompileInputs.cache
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.exe
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.pdb
+D:\4 сем\ооп\graphicEditor\graphicEditor\obj\Debug\graphicEditor.lab1.resources
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe.config
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\bin\Debug\graphicEditor.pdb
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csprojResolveAssemblyReference.cache
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.Lab1.resources
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.Properties.Resources.resources
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csproj.GenerateResource.Cache
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csproj.CoreCompileInputs.cache
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.exe
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\obj\Debug\graphicEditor.pdb
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\bin\Debug\Shape.dll
+D:\4 сем\ооп\1\graphicEditor\graphicEditor\bin\Debug\Shape.pdb
+G:\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe.config
+G:\graphicEditor\graphicEditor\bin\Debug\graphicEditor.exe
+G:\graphicEditor\graphicEditor\bin\Debug\graphicEditor.pdb
+G:\graphicEditor\graphicEditor\bin\Debug\Shape.dll
+G:\graphicEditor\graphicEditor\bin\Debug\Shape.pdb
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csprojResolveAssemblyReference.cache
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.Lab1.resources
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.Properties.Resources.resources
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.csproj.GenerateResource.Cache
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.exe
+G:\graphicEditor\graphicEditor\obj\Debug\graphicEditor.pdb
+C:\Users\frend\Desktop\graphicEditor\bin\Debug\graphicEditor.exe.config
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.exe
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.pdb
+C:\Users\frend\Desktop\graphicEditor\bin\Debug\graphicEditor.exe
+C:\Users\frend\Desktop\graphicEditor\bin\Debug\graphicEditor.pdb
+C:\Users\frend\Desktop\graphicEditor\bin\Debug\Shape.pdb
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.csprojResolveAssemblyReference.cache
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.Lab1.resources
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.Properties.Resources.resources
+C:\Users\frend\Desktop\graphicEditor\obj\Debug\graphicEditor.csproj.GenerateResource.Cache
